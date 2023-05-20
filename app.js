@@ -14,6 +14,7 @@ const io = require('socket.io')(server, {
 // Enable CORS
 app.use(cors());
 
+
 let waitingClients = [];
 let connectedClients = [];
 
