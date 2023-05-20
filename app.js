@@ -1,5 +1,6 @@
 const express = require('express');
 const http = require('http');
+const PORT = process.env.PORT || 3000;
 
 const app = express();
 const server = http.createServer(app);
@@ -170,7 +171,7 @@ function handleDisconnect(socket, partnerId) {
 }
 
 // Start the server
-const port = 3000;
-server.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+// const port = 3000;
+server.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });
